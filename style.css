@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(170, 18, 18);
+}
+.topNav {
+  display: flex;
+  background-color: rgb(39, 16, 238);
+  padding: 15px;
+  font-family: sans-serif;
+  color: white;
+}
+.topNav__items {
+  display: flex;
+}
+
+.topNav_link {
+  padding-right: 10px;
+}
+.topNav__items--right {
+  margin-left: auto;
+}
+.topNav-toggle {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .topNav__items,
+  .topNav {
+    flex-direction: column;
+  }
+
+  .topNav__items {
+    display: none;
+  }
+  .topNav__items--right {
+    margin-left: 0;
+  }
+  .topNav-toggleShow {
+    display: flex !important;
+  }
+
+  .topNav-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
